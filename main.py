@@ -49,7 +49,7 @@ def get_detection_folder():
 if __name__ == '__main__':
 
     st.markdown(hidemenu,unsafe_allow_html=True)
-    st.title('Penghitung Koloni Bakteri Otomatis')
+    st.title('Bacteria Colony Counter')
 
     parser = argparse.ArgumentParser()
     parser.add_argument('--weights', nargs='+', type=str,
@@ -91,10 +91,10 @@ if __name__ == '__main__':
 
 
     uploaded_file = st.sidebar.file_uploader(
-        "Gambar", type=['png', 'jpeg', 'jpg'])
+        "Image", type=['png', 'jpeg', 'jpg'])
     if uploaded_file is not None:
         is_valid = True
-        with st.spinner(text='Memuat...'):
+        with st.spinner(text='Loading...'):
             st.sidebar.image(uploaded_file)
             picture = Image.open(uploaded_file)
             picture = picture.save(f'data/images/{uploaded_file.name}')
@@ -105,12 +105,12 @@ if __name__ == '__main__':
 
     if is_valid:
         print('valid')
-        if st.button('Hitung'):
+        if st.button('Counting'):
 
             # detect(opt)
             main(opt)
 
-            with st.spinner(text='Menyiapkan Gambar'):
+            with st.spinner(text='Loading..'):
                 for img in os.listdir(get_detection_folder()):
                     st.image(str(Path(f'{get_detection_folder()}') / img))
 

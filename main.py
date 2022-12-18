@@ -9,13 +9,13 @@ import sys
 import argparse
 from PIL import Image
 
-#Tambahan
-from tambahan import utils as utl
-from tambahan import home,about,analysis,options,configuration
+# Tambahan
+import utils as utl
+from views import home,about,analysis,options,configuration
 
 st.set_page_config(layout="wide", page_title='Navbar sample')
 st.set_option('deprecation.showPyplotGlobalUse', False)
-# utl.inject_custom_css()
+utl.inject_custom_css()
 utl.navbar_component()
 
 def navigation():
@@ -34,11 +34,7 @@ def navigation():
         home.load_view()
         
 navigation()
-
 # Tambahan End
-
-
-
 
 hidemenu =  """
 <style>

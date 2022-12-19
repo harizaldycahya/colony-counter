@@ -5,7 +5,7 @@ hidemenu =  """
 
     @import url('https://fonts.googleapis.com/css2?family=Rubik+Gemstones&display=swap');
     html, body, [class*=“css”]{
-        font-family: 'Rubik Gemstones', cursive;
+        font-family: 'Rubik Gemstones', cursive !important;
     }
     #MainMenu{
         visibility:hidden;

@@ -4,6 +4,9 @@ hidemenu =  """
 <style>
 
     @import url('https://fonts.googleapis.com/css2?family=Rubik+Gemstones&display=swap');
+    html, body, [class*=“css”]{
+        font-family: 'Rubik Gemstones', cursive;
+    }
     #MainMenu{
         visibility:hidden;
     }
@@ -16,13 +19,6 @@ hidemenu =  """
         position:relative;
         color:tomato;
     }
-
-    html, body {
-        font-family: 'Rubik Gemstones', cursive;
-    }
-
-
-
 </style>
 """
 

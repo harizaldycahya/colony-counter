@@ -18,7 +18,7 @@ hidemenu =  """
 """
 
 
-st.markdown("# Bacteria Colony Counter")
+st.markdown("# **:blue[Bacteria]** Colony Counter")
 st.write(
     """Web app to counting bacteria colony automatically – easy to use and fast."""
 )
@@ -43,7 +43,3 @@ st.markdown(
     """,
         unsafe_allow_html=True,
 )
-
-"# Hello"
-
-"""This font will look different, based on your choice of radio button"""

@@ -1,9 +1,8 @@
 import streamlit as st
 
-st.markdown("# Counting Colony App")
-st.sidebar.header("Home")
+st.markdown("# Bacteria Colony Counter")
 st.write(
-    """This demo illustrates a combination of plotting and animation with
-Streamlit. We're generating a bunch of random numbers in a loop for around
-5 seconds. Enjoy!"""
+    """Web app to counting bacteria colony automatically – easy to use and fast."""
 )
+link = '[GitHub](http://github.com)'
+st.markdown(link, unsafe_allow_html=True)

@@ -2,11 +2,6 @@ import streamlit as st
 
 hidemenu =  """
 <style>
-
-    @import url('https://fonts.googleapis.com/css2?family=Rubik+Gemstones&display=swap');
-    html, body, [class*=“css”]{
-        font-family: 'Rubik Gemstones', cursive !important;
-    }
     #MainMenu{
         visibility:hidden;
     }

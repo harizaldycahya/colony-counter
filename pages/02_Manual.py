@@ -1,4 +1,5 @@
 import streamlit as st
+from PIL import Image
 
 hidemenu =  """
 <style>
@@ -23,3 +24,6 @@ st.write(
 Streamlit. We're generating a bunch of random numbers in a loop for around
 5 seconds. Enjoy!"""
 )
+
+image = Image.open('images/manual (1).png')
+st.image(image, caption='manual (1)')

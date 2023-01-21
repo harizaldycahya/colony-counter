@@ -160,7 +160,7 @@ def run(
                 # Write results
                 for *xyxy, conf, cls in reversed(det):
                     # Tambahan edok
-                     if(names[0] == ''):
+                    if(names[0] == ''):
                         st.text('Tidak ada kelas terdeteksi')
                     if save_txt:  # Write to file
                         xywh = (xyxy2xywh(torch.tensor(xyxy).view(1, 4)) / gn).view(-1).tolist()  # normalized xywh

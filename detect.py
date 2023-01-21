@@ -162,8 +162,8 @@ def run(
                 for *xyxy, conf, cls in reversed(det):
                     # Tambahan edok
                     c = int(cls) 
-                    if(names[0] == '' & names[1] == '' & names[2] == ''):
-                        st.text('Tidak ada kelas terdeteksi')
+                    # if(names[0] == '' & names[1] == '' & names[2] == ''):
+                    st.text(names[0])
                     if save_txt:  # Write to file
                         xywh = (xyxy2xywh(torch.tensor(xyxy).view(1, 4)) / gn).view(-1).tolist()  # normalized xywh
                         line = (cls, *xywh, conf) if save_conf else (cls, *xywh)  # label format

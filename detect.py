@@ -182,7 +182,8 @@ def run(
                             # tambahan
                             # cv2.rectangle(im0, (0,0), (1800, 250), (0,0,0) ,-1)
                             jumlah = str(n)
-                            global konversi = int(''.join(filter(str.isdigit, jumlah)))
+                            konversi = int(''.join(filter(str.isdigit, jumlah)))
+                            st.subheader('Colony : '+str(konversi))
                             # cv2.putText(im0,' Colony : '+str(konversi),(0,200), cv2.FONT_HERSHEY_SIMPLEX, 5,(255,255,255),24,cv2.LINE_AA)
                             # st.text('Colony : '+str(konversi))
                         else:
@@ -196,7 +197,6 @@ def run(
                     classDetected.append(names[c])
 
             # Stream results
-            st.subheader('Colony : '+str(konversi))
             im0 = annotator.result()
             LOGGER.info(classDetected)
             if(classDetected==[]):

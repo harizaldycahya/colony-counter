@@ -176,7 +176,8 @@ def run(
                         cv2.rectangle(im0, (0,0), (1800, 250), (0,0,0) ,-1)
                         jumlah = str(n)
                         konversi = int(''.join(filter(str.isdigit, jumlah)))
-                        cv2.putText(im0,' Colony : '+str(konversi),(0,200), cv2.FONT_HERSHEY_SIMPLEX, 5,(255,255,255),24,cv2.LINE_AA)
+                        # cv2.putText(im0,' Colony : '+str(konversi),(0,200), cv2.FONT_HERSHEY_SIMPLEX, 5,(255,255,255),24,cv2.LINE_AA)
+                        st.text('Colony : '+str(konversi))
                     if save_crop:
                         save_one_box(xyxy, imc, file=save_dir / 'crops' / names[c] / f'{p.stem}.jpg', BGR=True)
 

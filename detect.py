@@ -158,7 +158,10 @@ def run(
                 for c in det[:, -1].unique():
                     n = (det[:, -1] == c).sum()  # detections per class
                     s += f"{n} {names[int(c)]}{'s' * (n > 1)}, "  # add to string
-
+                # Tambahan
+                jumlah = str(n)
+                konversi = int(''.join(filter(str.isdigit, jumlah)))
+                st.subheader('Colony : '+str(konversi))
                 # Write results
                 for *xyxy, conf, cls in reversed(det):
                     # Tambahan edok
@@ -181,9 +184,9 @@ def run(
                             annotator.box_label(xyxy, label, color=colors(c, True))
                             # tambahan
                             # cv2.rectangle(im0, (0,0), (1800, 250), (0,0,0) ,-1)
-                            jumlah = str(n)
-                            konversi = int(''.join(filter(str.isdigit, jumlah)))
-                            st.subheader('Colony : '+str(konversi))
+                            # jumlah = str(n)
+                            # konversi = int(''.join(filter(str.isdigit, jumlah)))
+                            # st.subheader('Colony : '+str(konversi))
                             # cv2.putText(im0,' Colony : '+str(konversi),(0,200), cv2.FONT_HERSHEY_SIMPLEX, 5,(255,255,255),24,cv2.LINE_AA)
                             # st.text('Colony : '+str(konversi))
                         else:

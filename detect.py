@@ -180,7 +180,7 @@ def run(
                             label = None if hide_labels else (names[c] if hide_conf else f'{names[c]} {conf:.2f}')
                             annotator.box_label(xyxy, label, color=colors(c, True))
                             # tambahan
-                            cv2.rectangle(im0, (0,0), (1800, 250), (0,0,0) ,-1)
+                            # cv2.rectangle(im0, (0,0), (1800, 250), (0,0,0) ,-1)
                             jumlah = str(n)
                             konversi = int(''.join(filter(str.isdigit, jumlah)))
                             # cv2.putText(im0,' Colony : '+str(konversi),(0,200), cv2.FONT_HERSHEY_SIMPLEX, 5,(255,255,255),24,cv2.LINE_AA)
@@ -196,7 +196,7 @@ def run(
                     classDetected.append(names[c])
 
             # Stream results
-            st.text('Colony : '+str(konversi))
+            st.subheader('Colony : '+str(konversi))
             im0 = annotator.result()
             LOGGER.info(classDetected)
             if(classDetected==[]):

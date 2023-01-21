@@ -184,7 +184,7 @@ def run(
                             jumlah = str(n)
                             konversi = int(''.join(filter(str.isdigit, jumlah)))
                             # cv2.putText(im0,' Colony : '+str(konversi),(0,200), cv2.FONT_HERSHEY_SIMPLEX, 5,(255,255,255),24,cv2.LINE_AA)
-                            st.text('Colony : '+str(konversi))
+                            # st.text('Colony : '+str(konversi))
                         else:
                             LOGGER.info('Tidak ada yang terdeteksi')
                     if save_crop:
@@ -196,6 +196,7 @@ def run(
                     classDetected.append(names[c])
 
             # Stream results
+            st.text('Colony : '+str(konversi))
             im0 = annotator.result()
             LOGGER.info(classDetected)
             if(classDetected==[]):

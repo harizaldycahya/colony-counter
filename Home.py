@@ -33,7 +33,7 @@ st.markdown('##')
 st.markdown('##')
 st.subheader('Why Colony Counting ?')
 st.write(
-    """colony counting is ultimately to estimate the number of cells present based on their given ability to continue to grow and expand under certain conditions like temperature and the state of the nutrient medium."""
+    """colony counting is important to estimate the number of cells present based on their given ability to continue to grow and expand under certain conditions like temperature and the state of the nutrient medium."""
 )
 st.markdown('##')
 st.markdown('##')

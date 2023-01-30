@@ -24,8 +24,11 @@ st.write(
 )
 link = '[Start Counting Colony](https://harizaldycahya-colony-counter-home-ng37y9.streamlit.app/Counting)'
 st.markdown(link, unsafe_allow_html=True)
-
-
+st.subheader('')
+st.subheader('Why Colony Counting ?')
+st.write(
+    """colony counting is ultimately to estimate the number of cells present based on their given ability to continue to grow and expand under certain conditions like temperature and the state of the nutrient medium."""
+)
 st.markdown(
     """
         <style>

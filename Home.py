@@ -24,12 +24,12 @@ st.write(
 )
 link = '[Start Counting Colony](https://harizaldycahya-colony-counter-home-ng37y9.streamlit.app/Counting)'
 st.markdown(link, unsafe_allow_html=True)
-st.markdown('##')
+st.markdown('########')
 st.subheader('Why Colony Counting ?')
 st.write(
     """colony counting is ultimately to estimate the number of cells present based on their given ability to continue to grow and expand under certain conditions like temperature and the state of the nutrient medium."""
 )
-st.markdown('##')
+st.markdown('########')
 st.subheader('Why automatic Colony Counting ?')
 st.write(
     """Manual counting is a thank-less and highly labour-intensive process. As those who do it know it is not uncommon for a total count of a hundred plates to span a full 8-hour working day. Some assays may even require the analysis of thousands of plates which effectively subjects a capable researcher to a menial task for a 1, 2 or even 3-week period. For a researcher to have the necessary skills to count colonies they must be adequately trained which is another expensive and time-consuming process. On top of the time, money and effort invested into manual counts the results may possibly be non-repeatable and are often fraught with errors. Compared to manual counting, automated colony counters provide substantial performance enhancements including faster processing and throughput and improved accuracy – all of which improve research outputs without wasting valuable time or compromising data quality."""

@@ -20,9 +20,7 @@ footer:after{
 
 st.markdown("# Manual")
 st.write(
-    """This demo illustrates a combination of plotting and animation with
-Streamlit. We're generating a bunch of random numbers in a loop for around
-5 seconds. Enjoy!"""
+    """This page will explain in detail how to use this web app to automatically counting colony forming units"""
 )
 
 manual_1 = Image.open('images/manual (1).png')

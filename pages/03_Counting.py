@@ -51,6 +51,7 @@ if __name__ == '__main__':
 
     st.markdown(hidemenu,unsafe_allow_html=True)
     st.title('Automatic Bacteria Colony Forming Units Counter')
+    st.write('The image resolution should be above 800px to get the best results')
 
     parser = argparse.ArgumentParser()
     parser.add_argument('--weights', nargs='+', type=str,

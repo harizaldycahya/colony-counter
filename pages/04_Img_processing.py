@@ -70,7 +70,7 @@ if __name__ == '__main__':
         if st.button('Counting'):
             
             # Edited
-            gray = cv2.cvrColor(picture, cv2.COLOR_GGR2GRAY)
+            gray = cv2.cvtColor(picture, cv2.COLOR_GGR2GRAY)
             img = cv2.medianBlur(gray, 5)
 
             cimg = cv2.cvtColor(img, cv2.COLOR_GRAY2BGR)
@@ -88,4 +88,4 @@ if __name__ == '__main__':
 
                 # detect(opt)
                 #main(opt)
-                Image.open(picture)
+            Image.open(picture)

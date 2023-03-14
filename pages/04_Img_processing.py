@@ -79,13 +79,13 @@ if __name__ == '__main__':
             circles = np.uint16(np.around(circles))
 
             for i in circles[0, :]:
-            # Outer Circle
-            cv2.circle(picture, (i[0], i[1]), i[2], (0,255,0), 2)
+                # Outer Circle
+                cv2.circle(picture, (i[0], i[1]), i[2], (0,255,0), 2)
 
-            # center circle
-            cv2.circle(picture, (i[0], i[1]), 2, (0,255,0), 3)
-            # End Edited
+                # center circle
+                cv2.circle(picture, (i[0], i[1]), 2, (0,255,0), 3)
+                # End Edited
 
-            # detect(opt)
-            #main(opt)
-            Image.open(picture)
+                # detect(opt)
+                #main(opt)
+                Image.open(picture)
